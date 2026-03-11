@@ -1,0 +1,14 @@
+{
+  "name": "dcf-web-widget",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Embeddable DCF API + JS demo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
