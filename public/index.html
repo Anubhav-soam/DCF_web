@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCF Widget Demo</title>
+    <style>
+      body { font-family: Arial, sans-serif; max-width: 1000px; margin: 24px auto; padding: 0 12px; }
+      .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+      label { font-size: 12px; display:block; }
+      input { width:100%; padding:8px; }
+      button { margin-top: 10px; padding: 10px 16px; }
+      pre { background: #f6f8fa; padding: 12px; border-radius: 6px; overflow:auto; }
+    </style>
+  </head>
+  <body>
+    <h1>DCF API Demo (JavaScript)</h1>
+    <p>Embed by calling <code>/api/dcf</code> from your website frontend.</p>
+
+    <div class="grid">
+      <label>Base Revenue<input id="baseRevenue" value="100000" /></label>
+      <label>Revenue Growth<input id="revenueGrowth" value="0.08" /></label>
+      <label>EBIT Margin<input id="ebitMargin" value="0.15" /></label>
+      <label>Dep as Revenue<input id="depAsRevenue" value="0.03" /></label>
+      <label>NWC as Revenue<input id="nwcAsRevenue" value="0.12" /></label>
+      <label>Capex as Revenue<input id="capexAsRevenue" value="0.05" /></label>
+      <label>Tax Rate<input id="taxRate" value="0.18" /></label>
+      <label>WACC<input id="wacc" value="0.12" /></label>
+      <label>Terminal Growth<input id="terminalGrowth" value="0.03" /></label>
+      <label>Shares<input id="shares" value="1000000000" /></label>
+      <label>Cash<input id="cash" value="0" /></label>
+      <label>Debt<input id="debt" value="0" /></label>
+    </div>
+
+    <button id="run">Run DCF</button>
+
+    <h3>Output</h3>
+    <pre id="out">Click Run DCF</pre>
+
+    <script src="/widget.js"></script>
+  </body>
+</html>
